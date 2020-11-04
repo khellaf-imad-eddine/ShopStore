@@ -1,0 +1,68 @@
+*,
+*::after,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background: #0184ac;
+    color: #fff;
+}
+
+
+/*flex style*/
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.center-y {
+    display: flex;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+//
+a {
+    color: inherit;
+}
+
+.primary-title {
+    font-size: calc(16px + .6vw);
+    position: relative;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    &::before {
+        height: 5px;
+        width: 100px;
+        content: "";
+        position: absolute;
+        border-bottom: 3px solid #000;
+        bottom: -2px;
+    }
+    a {
+        font-size: calc(10px + .6vw);
+        color: $primary-color;
+        padding-left: 10px;
+    }
+}
+
+.golden-star {
+    color: gold;
+}
+
+.empty-star {
+    color: #999;
+}
