@@ -1,0 +1,71 @@
+.reg-content {
+    width: 320px;
+    margin: 50px auto;
+    text-align: center;
+    h1 {
+        margin-bottom: 10px;
+    }
+    p a {
+        color: $primary-color;
+    }
+    form {
+        width: 100%;
+        margin: 50px 0;
+        .label {
+            display: block;
+            position: relative;
+            height: 40px;
+            width: 100%;
+            background: red;
+            margin: 35px 0;
+            input {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 320px;
+                border: none;
+                background: #eee;
+                padding: 0 15px;
+                font-size: 16px;
+            }
+            span {
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 15px;
+                pointer-events: none;
+                transition: .3s ease-in-out;
+                z-index: 2;
+            }
+            input:focus {
+                outline: none;
+            }
+            input:focus+span,
+            input:not(:placeholder-shown)+span {
+                top: -10px;
+                left: 0;
+                font-size: 14px;
+                color: $primary-color;
+            }
+        }
+        input[type="submit"] {
+            background: $primary-color;
+            color: #fff;
+            padding: 12px 0;
+            width: 100%;
+            margin: 10px 0 50px 0;
+            font-weight: bolder;
+            font-size: 16px;
+            border: none;
+        }
+    }
+    .sm {
+        display: block;
+        text-decoration: none;
+        width: 100%;
+        background: #ccc;
+        padding: 10px 0;
+        margin: 25px 0;
+    }
+}
