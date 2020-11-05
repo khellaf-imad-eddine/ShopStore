@@ -1,0 +1,86 @@
+header .header-content {
+    .men-bg-2 {
+        background: linear-gradient(180deg, #d5d5d5 0%, #dadada 100%);
+    }
+    .men-bg-3 {
+        background: linear-gradient(180deg, #e9e9e9 0%, #e8e8e8 100%);
+    }
+    .accessories-bg-2 {
+        background: linear-gradient(180deg, #c2bebb 0%, #b3b0ab 100%);
+    }
+    .accessories-bg-3 {
+        background: linear-gradient(180deg, #d0ccc9 0%, #cdc9c6 100%);
+    }
+}
+
+
+/******************
+    **Products Section**
+    ******************/
+
+.products {
+    width: 100%;
+    padding: 75px 6vw;
+    position: relative;
+    aside {
+        padding: 25px 25px 0 0;
+        width: 200px;
+        ul {
+            list-style: none;
+            margin: 25px 0;
+        }
+    }
+    .products-content {
+        width: auto;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding: 0 50px;
+        .latest-product-box {
+            height: 320px;
+            width: 200px;
+            position: relative;
+            margin: 20px 10px;
+            img {
+                height: 180px;
+                width: 100%;
+                object-fit: cover;
+            }
+            .img-holder {
+                position: relative;
+                .img-link {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background: rgba(0, 0, 0, .7);
+                    opacity: 0;
+                    transition: .3s ease-in-out;
+                }
+                &:hover .img-link {
+                    opacity: 1;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+            .discount {
+                font-size: 12px;
+                justify-content: space-between;
+                margin-top: 5px;
+            }
+            .new-product-label {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}
+
+
+/******************
+    **Products Section**
+    ******************/
